@@ -19,6 +19,8 @@
 
 如果我写的开源项目对你有所帮助，欢迎提供赞助支持，非常感谢。
 
+通过 [爱发电](https://afdian.com/a/CaoMeiYouRen) 支持我的创作。
+
 <a href="https://afdian.com/@CaoMeiYouRen">
   <img src="https://oss.cmyr.dev/images/202306192324870.png" width="312px" height="78px" alt="在爱发电支持我">
 </a>
