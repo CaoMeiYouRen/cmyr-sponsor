@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://github.com/CaoMeiYouRen/cmyr-sponsor">
-    <img src='./sponsorkit/sponsors.svg'/>
+    <img src='./sponsorkit/sponsors.svg' alt="草梅友仁的赞助者列表" />
   </a>
 </p>
 
