@@ -35,5 +35,7 @@ sessions
 dist
 temp
 
-sponsorkit
-.cache
+# sponsorkit
+.cache.json
+*.png
+*.webp
