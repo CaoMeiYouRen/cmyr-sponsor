@@ -52,9 +52,13 @@ async function upload(filepath: string, rootpath: string, prefix: string) {
 }
 
 async function start() {
-    if (await fs.pathExists('sponsorkit/sponsors.svg')) {
-        await upload('sponsorkit/sponsors.svg', 'sponsorkit', 'sponsorkit')
+    const files = ['sponsorkit/sponsors.svg', 'sponsorkit/sponsors.png', 'sponsorkit/sponsors.webp']
+    for (const file of files) {
+        if (await fs.pathExists(file)) {
+            await upload(file, 'sponsorkit', 'sponsorkit')
+        }
     }
+    logger.info('全部文件上传完成！')
 }
 
 start()

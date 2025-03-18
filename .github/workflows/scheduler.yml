@@ -26,8 +26,8 @@ jobs:
         env:
           SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
           SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
-      - run: pnpm run build
-      - run: pnpm run start
+      # - run: pnpm run build
+      - run: pnpm run start:tsx
         env:
           BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
