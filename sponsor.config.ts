@@ -1,7 +1,29 @@
 import { defineConfig, tierPresets } from 'sponsorkit'
 
-// 汇率
-const exechangeRate = 7.0
+interface Rates {
+    rates: {
+        USD: number
+        CNY: number
+        [key: string]: number
+    }
+}
+
+async function getCNYtoUSDRate(): Promise<number> {
+    try {
+        const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD')
+        const response: Rates = await res.json()
+        return response.rates.CNY || 7.0
+    } catch (error) {
+        console.error('获取汇率失败，使用默认汇率 7.0', error)
+        return 7.0
+    }
+}
+
+// 动态获取汇率
+const exchangeRate = await getCNYtoUSDRate()
+
+console.log('当前汇率：1 USD =', exchangeRate, 'CNY')
+
 export default defineConfig({
     // includePrivate: true,
     tiers: [
@@ -15,17 +37,17 @@ export default defineConfig({
         },
         {
             title: '赞助商',
-            monthlyDollars: 5 / exechangeRate,
+            monthlyDollars: 5 / exchangeRate,
             preset: tierPresets.medium,
         },
         {
             title: '白银赞助商',
-            monthlyDollars: 30 / exechangeRate,
+            monthlyDollars: 30 / exchangeRate,
             preset: tierPresets.large,
         },
         {
-            title: '金牌赞助商',
-            monthlyDollars: 365 / exechangeRate,
+            title: '黄金赞助商',
+            monthlyDollars: 365 / exchangeRate,
             preset: tierPresets.xl,
         },
     ],
@@ -42,6 +64,7 @@ export default defineConfig({
         },
     ],
     afdian: {
-        exechangeRate,
+        exechangeRate: exchangeRate,
     },
 })
+
