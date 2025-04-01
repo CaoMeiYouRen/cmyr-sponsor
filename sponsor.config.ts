@@ -8,9 +8,15 @@ interface Rates {
     }
 }
 
+/**
+ * @description 获取当前的人民币对美元的汇率。Rates By Exchange Rate API：https://www.exchangerate-api.com
+ * @link https://www.exchangerate-api.com
+ * @author CaoMeiYouRen
+ * @date 2025-04-01
+ */
 async function getCNYtoUSDRate(): Promise<number> {
     try {
-        const res = await fetch('https://api.exchangerate-api.com/v4/latest/USD')
+        const res = await fetch('https://open.er-api.com/v6/latest/USD')
         const response: Rates = await res.json()
         return response.rates.CNY || 7.0
     } catch (error) {
