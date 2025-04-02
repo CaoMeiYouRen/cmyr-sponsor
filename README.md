@@ -32,6 +32,7 @@
     <img src='./sponsorkit/sponsors.svg' alt="草梅友仁的赞助者列表" />
   </a>
 </p>
+
 ## 📦 其他
 
 汇率 API：<a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
