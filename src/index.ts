@@ -32,10 +32,10 @@ const S3 = new S3Client({
 async function cloudflarePurgeCaches(files: string[]) {
     try {
         const client = new Cloudflare({
-            apiEmail: process.env['CLOUDFLARE_EMAIL'], // This is the default and can be omitted
-            apiKey: process.env['CLOUDFLARE_API_KEY'], // This is the default and can be omitted
+            apiEmail: process.env.CLOUDFLARE_EMAIL, // This is the default and can be omitted
+            apiKey: process.env.CLOUDFLARE_API_KEY, // This is the default and can be omitted
         })
-        const CLOUDFLARE_ZONE_ID = process.env['CLOUDFLARE_ZONE_ID']
+        const CLOUDFLARE_ZONE_ID = process.env.CLOUDFLARE_ZONE_ID
         const response = await client.cache.purge({ zone_id: CLOUDFLARE_ZONE_ID, files })
         return response
     } catch (error) {
