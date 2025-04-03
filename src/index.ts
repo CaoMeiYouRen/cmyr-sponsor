@@ -72,7 +72,7 @@ async function start() {
     for (const file of files) {
         if (await fs.pathExists(file)) {
             await upload(file, 'sponsorkit', 'sponsorkit')
-            const url = new URL(file, BASE_URL).toString()
+            const url = `${BASE_URL}/${file}`
             logger.info(`文件：${file} 上传成功！url：${url}`)
             // CDN 刷新
             const response = await cloudflarePurgeCaches([url])
