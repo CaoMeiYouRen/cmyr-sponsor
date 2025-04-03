@@ -14,11 +14,11 @@ dotenv.config({
 
 const logger = console
 
-const ACCOUNT_ID = process.env.ACCOUNT_ID || ''
-const ACCESS_KEY_ID = process.env.ACCESS_KEY_ID || ''
-const SECRET_ACCESS_KEY = process.env.SECRET_ACCESS_KEY || ''
-const BUCKET_NAME = process.env.BUCKET_NAME || ''
-const BASE_URL = process.env.BASE_URL || ''
+const ACCOUNT_ID = process.env.R2_ACCOUNT_ID || process.env.ACCOUNT_ID || ''
+const ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID || process.env.ACCESS_KEY_ID || ''
+const SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY || process.env.SECRET_ACCESS_KEY || ''
+const BUCKET_NAME = process.env.R2_BUCKET_NAME || process.env.BUCKET_NAME || ''
+const BASE_URL = process.env.R2_BASE_URL || process.env.BASE_URL || ''
 
 const S3 = new S3Client({
     region: 'auto',
