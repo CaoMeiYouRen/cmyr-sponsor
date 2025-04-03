@@ -92,6 +92,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.726.0",
+    "cloudflare": "^4.2.0",
     "dotenv": "^16.4.7",
     "fs-extra": "^11.2.0",
     "mime-types": "^2.1.35",
