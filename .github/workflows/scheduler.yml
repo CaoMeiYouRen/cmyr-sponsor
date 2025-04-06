@@ -37,6 +37,7 @@ jobs:
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
           ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+          BASE_URL: ${{ secrets.BASE_URL }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
