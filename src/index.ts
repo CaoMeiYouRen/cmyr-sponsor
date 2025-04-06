@@ -76,7 +76,7 @@ async function start() {
             logger.info(`文件：${file} 上传成功！url：${url}`)
             // CDN 刷新
             const response = await cloudflarePurgeCaches([url])
-            logger.info(`文件：${file} CDN 刷新成功！id：${response.id}`)
+            logger.info(`文件：${file} CDN 刷新成功！id：${response?.id}`)
         }
     }
     logger.info('全部文件上传完成！')
