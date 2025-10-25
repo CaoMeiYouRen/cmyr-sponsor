@@ -29,15 +29,12 @@
     "dev:tsup": "cross-env NODE_ENV=development tsup --watch",
     "start": "node ./dist/index.mjs",
     "start:tsx": "cross-env NODE_ENV=production tsx src/index.ts",
-    "release": "semantic-release",
     "commit": "cz",
     "prepare": "husky install",
     "build:sponsorkit": "sponsorkit"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
     "@types/debug": "^4.1.12",
     "@types/fs-extra": "^11.0.4",
     "@types/mime-types": "^3.0.1",
@@ -53,7 +50,6 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
     "rimraf": "^6.0.1",
-    "semantic-release": "^23.0.6",
     "tsup": "^8.5.0",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
