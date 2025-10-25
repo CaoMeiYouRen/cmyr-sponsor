@@ -52,8 +52,8 @@
     "cz-conventional-changelog": "^3.3.0",
     "cz-conventional-changelog-cmyr": "^2.0.0",
     "debug": "^4.4.3",
-    "eslint": "^8.57.1",
-    "eslint-config-cmyr": "^1.1.32",
+    "eslint": "^9.38.0",
+    "eslint-config-cmyr": "^2.0.1",
     "eslint-plugin-import": "^2.32.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
@@ -103,7 +103,11 @@
     "overrides": {
       "compare-func": "^2.0.0",
       "katex": "^0.16.21"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   },
   "type": "module"
 }
