@@ -93,7 +93,8 @@
   "pnpm": {
     "overrides": {
       "compare-func": "^2.0.0",
-      "katex": "^0.16.21"
+      "katex": "^0.16.21",
+      "tmp": "^0.2.4"
     },
     "onlyBuiltDependencies": [
       "esbuild",
