@@ -94,7 +94,10 @@
     "overrides": {
       "compare-func": "^2.0.0",
       "katex": "^0.16.21",
-      "tmp": "^0.2.4"
+      "tmp": "^0.2.4",
+      "glob@<10.5.0": ">=10.5.0",
+      "glob@>=11.0.0 <11.1.0": ">=11.1.0",
+      "js-yaml@<4.1.1": ">=4.1.1"
     },
     "onlyBuiltDependencies": [
       "esbuild",
