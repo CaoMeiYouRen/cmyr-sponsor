@@ -34,7 +34,7 @@
     "build:sponsorkit": "sponsorkit"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.2.0",
+    "@commitlint/cli": "^20.4.0",
     "@types/debug": "^4.1.12",
     "@types/fs-extra": "^11.0.4",
     "@types/mime-types": "^3.0.1",
