@@ -82,7 +82,7 @@
     "url": "https://github.com/CaoMeiYouRen/cmyr-sponsor/issues"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.1057.0",
+    "@aws-sdk/client-s3": "^3.1053.0",
     "cloudflare": "^6.3.0",
     "dotenv": "^17.2.3",
     "fs-extra": "^11.3.5",
