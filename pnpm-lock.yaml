@@ -34,8 +34,8 @@ importers:
         specifier: ^3.1053.0
         version: 3.1075.0
       cloudflare:
-        specifier: ^7.0.0
-        version: 7.0.0
+        specifier: ^7.1.0
+        version: 7.1.0
       dotenv:
         specifier: ^17.2.3
         version: 17.4.2
@@ -1413,8 +1413,8 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
 
-  cloudflare@7.0.0:
-    resolution: {integrity: sha512-ZU8Yp1biaRRf+i1Hlap/VUwSBeKnOa4kkygIU9naE07JILnHdgLr9Wq/iPEeEf2in0N5m1giTp1ohY+cNQZEGQ==}
+  cloudflare@7.1.0:
+    resolution: {integrity: sha512-eb6WtiAbhuqdWmBdVo6fuXQgEBkYjhOeujRDYLEUWEZIECuABvDLz2DUYTwpN/4KyFecM4JtMHgZn5prlFUjLg==}
     hasBin: true
 
   color-convert@1.9.3:
@@ -4561,7 +4561,7 @@ snapshots:
 
   clone@1.0.4: {}
 
-  cloudflare@7.0.0: {}
+  cloudflare@7.1.0: {}
 
   color-convert@1.9.3:
     dependencies:
